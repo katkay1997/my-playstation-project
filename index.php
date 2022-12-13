@@ -1,14 +1,19 @@
+<?php 
+  error_reporting(E_ALL);
+  ini_set('display_errors', 1);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <h1> Three Equal Columns</h1>
-<?php 
+ <?php 
     include 'conn.php';
     include 'action_page.php';
 
@@ -17,7 +22,7 @@
     <?php 
 
 // Select all rows from the playstation_users table
-$query = "SELECT * FROM playstation_users";
+$query = "SELECT * FROM gamers";
 $result = mysqli_query($conn, $query);
 
 // Check if the query was successful
@@ -28,8 +33,8 @@ if ($result) {
 
   // Iterate over the rows in the result and echo the values of each column
   while ($row = mysqli_fetch_assoc($result)) {
-    echo "<tr><td>" . $row["username"] . "</td><td>" . $row["phone"] . "</td><td>" . $row["email"] . "</td></tr>";
-  }
+    echo "<tr><td>" . $row["username"] . "</td><td>" . $row["phone_number"] . "</td><td>" . $row["email"] . "</td></tr>";
+  } 
 
   // End the table
   echo "</table>";
@@ -40,8 +45,7 @@ if ($result) {
 // Close the connection
 mysqli_close($conn);
 
-    ?>
-
+?>
 
 <div class="row">
   <div class="column-1" style="background-color:#aaa;">
