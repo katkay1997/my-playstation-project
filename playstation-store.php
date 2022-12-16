@@ -15,44 +15,38 @@
 <body>
 
 <div class="row">
-  <div class="column-1">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
-  </div>
-  <div class="column" style="background-color:yellow;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
-  </div>
-  <div class="column" style="background-color:yellow;">
-    <h2>Column 3</h2>
-    <p>Some text..</p>
-  </div>
-</div>
-
-<div class="banner">
-    <h2> column 5</h2>
-    <p>Lets get this bread!</p>
-  </div> 
-
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>Column 6</h2>
-    <p>Some text..</p>
-  </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Column 7</h2>
-    <p>Some text..</p>
+  <div class="column-12" >
+    <img class="retro" src="imgs/retro-250x200.png">
   </div>
   
-  <div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>Column 8</h2>
-    <p>Some text..</p>
+<div class="banner">
+   <img src="imgs/lets-see.png" alt="clearance banner">
+  </div> 
+<hr> <!-- need to find a better set of code in the css file give a gap-->
+  <div class="banner" style="background-color: #0c3e82 !important;">
+   <img src="imgs/ps-ps-text.png" alt="playstation services">
   </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Column 9</h2>
-    <p>Some text..</p>
+
+  <div class="column"> <!--style="height: 800px; width: 50%" -->
+   <img src="imgs/return.png" alt="returnal" >
   </div>
+
+  <div class="column"> <!--style="height: 800px; width: 50%" -->
+    <img src="imgs/calli.png">
+  </div>
+</div>
+ 
+
+<div class="row">
+  <div class="column"> <!--style="height: 800px; width: 50%" -->
+  <img src="imgs/fall-800.png" alt="fall guys" >
+
+  </div>
+  <div class="column"> <!--style="height: 800px; width: 50%" -->
+    <img src="imgs/stray-800.png">
+    
+  </div>
+  
 
 </body>
 </html>
