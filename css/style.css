@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: sst;
   }
 
    @font-face {
@@ -7,8 +8,76 @@
     src: url(sst-fonts/SSTMedium.TTF);
   } 
   
+  .main{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+   
+    /* Create three equal columns that floats next to each other */
+  
+    .column-12 {
+      width: 100%;
+      padding: 10px;
+      display: block;    
+      /**/
+    }
+    
+    .retro {
+      flex: 1;
+      display: block;
+      margin: auto;
+    } 
+  
+    .banner {
+      flex-shrink: 1;
+      height: 250px;
+      }
+  
+    .banner img{
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      overflow: hidden;
+  }
+  
+  .games{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  
+  
+    .gamesitem {
+      flex: 1;
+      padding: 30px;
+      height:100vh;
+      
+    }
+  
+    .gamesitem img{
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      overflow: hidden;
+  }
+
+  #footer {
+    width:100%;
+    height: 150px;
+  }
+
+  #footer p{
+    text-align:center;
+    font:white;
+  }
+
   /* Create three equal columns that floats next to each other */
-  .column-12 {
+  /* .column-12 {
     float: left;
     width: 100%;
     padding: 10px;
@@ -16,14 +85,26 @@
     margin-left: auto;
     margin-right: auto;
     
-    /**/
-  }
+    
+  } 
   
   .retro {
     display: block;
     margin-left: auto;
     margin-right: auto;
      
+  }
+
+  .column-12 {
+    width: 100%;
+    padding: 10px;
+    display: block;    
+    
+  }
+  
+  .retro {
+    display: block;
+    margin: auto;
   } 
 
   .banner {
@@ -54,7 +135,7 @@
   
   #footer {
     width:100%;
-    height: 150px;
+    height: 15g0px;
   }
 
   #footer p{
@@ -62,9 +143,11 @@
     font:white;
   }
   
-  /* Clear floats after the columns */
-  .row:after {
+   Clear floats after the columns
+  .main:after {
     content: "";
     display: table;
     clear: both;
   }
+
+  */
