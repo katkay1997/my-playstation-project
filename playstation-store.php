@@ -41,15 +41,9 @@
       <img src="imgs/stray-800.png"> <br /><br /><br />
       <img src="imgs/return.png" alt="returnal">
     </div>
+    </div>
   </div>
-
-
-  <div id="footer" style="background-color:#0c3e82;">
-        <p> Made with love</p>
-    </div>  
   
-</div>
-
 </body>
 </html>
 
